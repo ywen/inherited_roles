@@ -17,7 +17,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency(%q<rspec>)
   gem.add_development_dependency(%q<rake>)
   gem.add_development_dependency(%q<guard-rspec>)
-  gem.add_development_dependency(%q<cane>)
-  gem.add_development_dependency(%q<simplecov>)
-  gem.add_development_dependency(%q<growl-rspec>)
 end
