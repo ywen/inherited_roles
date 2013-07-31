@@ -1,15 +1,13 @@
-# Inherited::Roles
+# InheritedRoles
 
 To implement Inherited roles by organization
 
-## Installation
+## Introduction
 
-Add this line to your application's Gemfile:
+The code is packaged in a rubygem. The gem has no outside runtime dependencies.
 
-    gem 'inherited-roles'
+## Persistence ( or lack thereof )
 
-And then execute:
+The requirements asked for no real DB, I went ahead implementing the models without using ActiveRecord. I believe this is not what the code problem implies. However, I see no real needs for using ActiveRecord and testing with doubles when I can just use POROs. I hope this is OK with you.
 
-    $ bundle
-
-## Usage
+In the implementation, I made effort to identify the persistence access code from the others, namely, if are to change the implementation using a persistence, then only place that needs to be changed is in ```OrganizationRole.role_for``` method.
