@@ -1,9 +1,5 @@
 module InheritedRoles
-  class Organization
-    include ModelInitializer
-    include EqualByName
-
-    attr_reader :name
+  class Organization < ModelBase
     attr_accessor :children, :parent
   end
 end

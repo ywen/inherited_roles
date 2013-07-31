@@ -1,9 +1,6 @@
 module InheritedRoles
-  class Role
-    include ModelInitializer
-    include EqualByName
+  class Role <ModelBase
     private_class_method :new
-    attr_reader :name
 
     class << self
       def has_role(*role_names)
