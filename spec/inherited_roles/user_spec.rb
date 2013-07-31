@@ -1,9 +1,7 @@
 require "spec_helper"
 
-module Inherited
-  module Roles
-    describe User do
+module InheritedRoles
+  describe User do
 
-    end
   end
 end
