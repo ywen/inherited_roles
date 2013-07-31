@@ -1,12 +1,9 @@
 module Inherited
   module Roles
     class Organization
+      include ModelInitializer
       attr_reader :name
       attr_accessor :children
-
-      def initialize(name)
-        @name = name
-      end
     end
   end
 end
