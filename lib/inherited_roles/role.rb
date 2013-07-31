@@ -13,5 +13,7 @@ module InheritedRoles
         end
       end
     end
+
+    has_role :admin, :user, :denied
   end
 end
