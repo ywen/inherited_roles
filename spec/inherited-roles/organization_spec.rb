@@ -1,4 +1,8 @@
 require 'spec_helper'
 
-describe Organization do
+module Inherited
+  module Roles
+    describe Organization do
+    end
+  end
 end

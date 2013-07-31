@@ -17,4 +17,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency(%q<rspec>)
   gem.add_development_dependency(%q<rake>)
   gem.add_development_dependency(%q<guard-rspec>)
+  gem.add_development_dependency 'rb-fsevent'
+  gem.add_development_dependency 'rb-readline'
+  gem.add_development_dependency 'terminal-notifier-guard'
 end

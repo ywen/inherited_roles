@@ -1,8 +1,7 @@
 module Inherited
   module Roles
-    class Organization
-      attr_reader :name
-      attr_accessor :children
+    class User
+      attr_accessor :role
 
       def initialize(name)
         @name = name
