@@ -1,3 +1,5 @@
+# A Service class that checks the role, user amd organization
+# relationships
 module InheritedRoles
   class RoleChecker
     class << self
