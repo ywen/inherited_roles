@@ -10,7 +10,7 @@ module InheritedRoles
       end
 
       def root_organization
-        @root_organization ||= Organization.new name: "Root Organization"
+        @root_organization ||= Organization.new name: "Root Organization", parent: nil
       end
 
       def middle_organization1
@@ -18,7 +18,7 @@ module InheritedRoles
       end
 
       def middle_organization2
-        @middle_organization2 ||= Organization.new name: "Middle 1", parent: root_organization
+        @middle_organization2 ||= Organization.new name: "Middle 2", parent: root_organization
       end
 
       def leaf_organization1
