@@ -1,5 +1,8 @@
 # InheritedRoles
 
+[![Build Status](https://travis-ci.org/ywen/inherited_roles.png?branch=master)](https://travis-ci.org/ywen/inherited_roles)
+[![Code Quality](https://codeclimate.com/badge.png)](https://codeclimate.com/github/ywen/inherited_roles)
+
 To implement Inherited roles by organization
 
 ## Introduction
