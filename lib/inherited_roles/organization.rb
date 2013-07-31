@@ -4,6 +4,6 @@ module InheritedRoles
     include EqualByName
 
     attr_reader :name
-    attr_accessor :children
+    attr_accessor :children, :parent
   end
 end

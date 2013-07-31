@@ -16,6 +16,26 @@ module InheritedRoles
           expect(described_class.role_for(user, organization)).to eq(Role.admin)
         end
       end
+
+      context "when the user doesn't have the role for the given organization" do
+        before(:each) do
+          user.organization_roles = []
+        end
+
+        it "returns nil" do
+          expect(described_class.role_for(user, organization)).to be_nil
+        end
+      end
+
+      context "when the user doesn't have any organization_roles" do
+        before(:each) do
+          user.organization_roles = nil
+        end
+
+        it "returns nil" do
+          expect(described_class.role_for(user, organization)).to be_nil
+        end
+      end
     end
   end
 end
