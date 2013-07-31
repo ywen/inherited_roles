@@ -6,6 +6,7 @@ module InheritedRoles
       # Given user and organization, return the role that the user
       # has th the organization
       def role_for(user, organization)
+        OrganizationRole.role_for user, organization
       end
     end
   end

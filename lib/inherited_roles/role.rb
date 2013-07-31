@@ -1,6 +1,7 @@
 module InheritedRoles
   class Role
     include ModelInitializer
+    include EqualByName
     private_class_method :new
     attr_reader :name
 

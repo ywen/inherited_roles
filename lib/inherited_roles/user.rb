@@ -1,6 +1,8 @@
 module InheritedRoles
   class User
     include ModelInitializer
-    attr_accessor :role
+    include EqualByName
+    attr_accessor :organization_roles
+
   end
 end
